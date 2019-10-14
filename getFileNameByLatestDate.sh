@@ -23,5 +23,5 @@ while read -r filename; do
     day=$dayTmp
     file=$filename
   fi
-done < <(grep -ircl --exclude="test.sh" $1 .)
+done < <(grep -ircl --exclude="test.sh" $1 $2)
 echo $file
